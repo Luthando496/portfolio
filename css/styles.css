@@ -172,6 +172,75 @@ Navbar
 ===============
 */
 
+.nav-links{
+  display: none;
+}
+
+.nav{
+  height: 5rem;
+  padding: 5rem;
+  display: grid;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.nav-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header{
+  display:grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav-btn{
+  background: transparent;
+  border:transparent;
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+
+@media screen and (min-width:768px)  {
+
+  .nav{
+    background:var(--clr-primary-10);
+  }
+  .nav-btn{
+    display: none;
+  }
+  .nav-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    justify-self: flex-end;
+  }
+  .nav-links a{
+    text-transform: uppercase;
+    color: var(--clr-grey-1);
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+    font-weight: bold;
+  }
+  .nav-links a:hover{
+    color: var(--clr-primary-5);
+  }
+
+  .nav-center{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+
+
+
+
 /*
 =============== 
 Sidebar
