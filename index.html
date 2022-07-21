@@ -12,7 +12,7 @@
   <body>
     <!-- navbar -->
     <nav class="nav" id="nav">
-      <div class="nav-center">
+      <div class="nav-center" id="home">
         <!-- nav header -->
         <div class="nav-header">
           <img src="./images/Luthando Didiza.svg" alt="" class="nav-logo">
@@ -23,13 +23,13 @@
         <!-- nav link -->
         <ul class="nav-links">
           <li class="nav-link">
-            <a href="index.html">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="nav-link">
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="nav-link">
-            <a href="projects.html">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li class="nav-link">
             <a href="contact.html">Contact</a>
@@ -50,13 +50,13 @@
         <!-- nav link -->
         <ul class="sidebar-links">
           <li class="nav-link">
-            <a href="index.html">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="nav-link">
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="nav-link">
-            <a href="projects.html">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li class="nav-link">
             <a href="contact.html">Contact</a>
@@ -136,7 +136,7 @@
     <!-- about -->
 
     <!-- end of about -->
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="section-center about-center">
         <article class="about-img">
           <img src="./images/about-img.jpeg" alt="" class="hero-photo">
@@ -150,7 +150,7 @@
           <p> Identifying innovative approaches and improved solutions to business challenges both motivate and drive me. Observation, inspiration, and determination are my foundation for success. My philosophy is that introducing fresh perspectives and new techniques allow businesses to evolve and grow. Similar to to this company , my goal is to remain on the cutting-edge of advancements.
 
             As you'll see, I have three years of hands-on experience efficiently coding websites and applications using modern HTML, CSS, JavaScript, Expressjs, MongoDB and Reactjs. As a progressive professional with programming experience, I believe that I can bring valuable contributions to your team. </p>
-          <a href="about.html" class="btn">About me</a>
+          <a href="#about" class="btn">About me</a>
         </article>
       </div>
 
@@ -200,16 +200,16 @@
 
        <!-- section title -->
        <div class="section-title servirce-title">
-        <h2>services</h2>
+        <h2>projects</h2>
         <div class="underline"></div>
-        <p class="projects-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quae quibusdam nobis doloribus fuga et error iste quaerat atque, minus, excepturi, veritatis unde maxime beatae totam cum? Ratione aliquid modi, suscipit excepturi deserunt nobis voluptate odit, deleniti ullam corrupti aut reprehenderit.</p>
+        <p class="projects-text">I work exclusive in Web development Building FrontEnd components and the Backend Building a REST / RESTFUL Api.</p>
 
       </div>
 
       <div class="section-center projects-center">
 
         <!-- single project -->
-        <a href="projects.html" class="project-1">
+        <a href="#projects" class="project-1">
           <article class="project">
             <img src="./images/project-1.jpeg" alt="single project" class="project-img">
             <div class="project-info">
@@ -219,7 +219,7 @@
           </article>
 
         </a>
-        <a href="projects.html" class="project-2">
+        <a href="#projects" class="project-2">
           <article class="project">
             <img src="./images/project-2.jpeg" alt="single project" class="project-img">
             <div class="project-info">
@@ -231,7 +231,7 @@
         </a>
 
 
-        <a href="projects.html" class="project-3">
+        <a href="#projects" class="project-3">
           <article class="project">
             <img src="./images/project-3.jpeg" alt="single project" class="project-img">
             <div class="project-info">
@@ -241,7 +241,7 @@
           </article>
 
         </a>
-        <a href="projects.html" class="project-4">
+        <a href="#projects" class="project-4">
           <article class="project">
             <img src="./images/project-4.jpeg" alt="single project" class="project-img">
             <div class="project-info">
@@ -413,6 +413,32 @@
 
     <!--end of  blog -->
     <!-- footer -->
+
+    <footer class="footer">
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p>&copy;<span id="date"></span> Luthando Didiza. All Rights Reserved</p>
+    </footer>
 
     <script src="./js/app.js"></script>
   </body>
