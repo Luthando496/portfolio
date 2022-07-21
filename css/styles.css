@@ -564,7 +564,7 @@ Projects
 .projects-text{
   width:85%;
   max-width: 30rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .project{
@@ -714,6 +714,7 @@ Connect
   width:100%;
   height:100%;
   object-fit: cover;
+  z-index:-2;
 }
 
 .connect::after{
@@ -724,7 +725,24 @@ Connect
   width:100%;
   height:100%;
   background: rgba(16, 152,14, 0.4);
+  z-index: -1;
+}
 
+.connect{
+  display: grid;
+  place-items: center;
+}
+
+
+.video-banner{
+  background:var(--clr-primary-10);
+  padding:3rem 5rem 5rem 5rem;
+  text-align: center;
+  margin:0;
+}
+
+.video-banner p{
+  max-width:30rem;
 }
 
 
@@ -733,6 +751,76 @@ Connect
 Skills
 ===============
 */
+
+@media screen and (min-width:768px) {
+
+  .skills-center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+  }
+
+  .skills{
+    background: var(--clr-primary-8);
+  }
+
+  .skills h3{
+    margin:1.5rem 0;
+    color: var(--clr-primary-1);
+  }
+  .skill{
+    margin-bottom: 1.25rem;
+    
+  }
+
+  .skill p{
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    color: var(--clr-primary-1);
+    
+  }
+
+  .skill-container{
+    background: var(--clr-white);
+    height:1rem;
+    width: 85%;
+    border-radius: var(--radius);
+    position: relative;
+  }
+
+  .skill-value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-5);
+    height: 100%;
+    width: 50%;
+  }
+
+  .value-70{
+    width: 70%;
+  }
+  .value-80{
+  width: 80%;
+
+  }
+  .value-85{
+  width: 85%;
+
+  }
+  .value-79{
+  width: 79%;
+
+  }
+
+  .skill-text{
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
 /*
 =============== 
 Timeline
