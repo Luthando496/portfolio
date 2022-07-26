@@ -600,7 +600,7 @@ Projects
   transition: var(--transition);
   border-radius: var(--radius);
   height: 15rem;
-  object-fit: cover;
+  object-fit:cover;
 }
 
 
@@ -840,6 +840,10 @@ Timeline
 
 .timeline p{
   margin: 0;
+  margin-left: 20px;
+}
+.timeline p:nth-child(odd){
+  margin-left: 20px;
 }
 .timeline-item:nth-child(even) {
   border-left: 2px dashed var(--clr-primary-5);
